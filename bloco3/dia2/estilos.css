@@ -1,0 +1,34 @@
+body {
+    font-size: 16px;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 65px;
+    color: orange;
+}
+
+li {
+    line-height: 40px;
+}
+
+.corFundo {
+    background-color: green;
+}
+
+p {
+    font-weight: 600px;
+    font-size: 3em;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#brown {
+    background-color: brown;
+}
+
+#red {
+    background-color: red;
+}
