@@ -3,7 +3,31 @@
     padding: 0;
 }
 
+#cabecalho {
+    height: 100px;
+    background-color: violet;
+}
+
 .titulo {
-    color: teal;
-    font-size: 25px;
+    text-align: center;
+    color: red;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.sub-titulo {
+    text-align: center;
+    margin-top: 10px;
+    color: blue;
+}
+
+#menu-principal li {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 30px;
+}
+
+#menu-principal li a {
+    text-decoration: none;
+    color: red;
 }
