@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    color: teal;
+    font-size: 25px;
+}
