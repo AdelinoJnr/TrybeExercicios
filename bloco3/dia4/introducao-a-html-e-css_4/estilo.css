@@ -18,6 +18,8 @@
 .sub-titulo {
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
     color: blue;
 }
 
@@ -30,4 +32,37 @@
 #menu-principal li a {
     text-decoration: none;
     color: red;
+}
+
+.box {
+    width: 720px;
+    margin: 0 auto;
+}
+
+img {
+    width: 200px;
+}
+
+h3 {
+    padding: 10px 0;
+    color: blueviolet;
+}
+
+#bibliocrafia a {
+    color: red;
+    text-decoration: none;
+}
+
+#bibliocrafia a:hover {
+    color: blue;
+}
+
+.box ul {
+    list-style: none;
+}
+
+#rodape {
+    padding: 20px 0;
+    color: blue;
+    margin-top: 40px;
 }
