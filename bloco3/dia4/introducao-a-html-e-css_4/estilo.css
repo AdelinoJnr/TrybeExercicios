@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#cabecalho {
+    height: 100px;
+    background-color: violet;
+}
+
+.titulo {
+    text-align: center;
+    color: red;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.sub-titulo {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: blue;
+}
+
+#menu-principal li {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 30px;
+}
+
+#menu-principal li a {
+    text-decoration: none;
+    color: red;
+}
+
+.box {
+    width: 720px;
+    margin: 0 auto;
+}
+
+img {
+    width: 200px;
+}
+
+h3 {
+    padding: 10px 0;
+    color: blueviolet;
+}
+
+#bibliocrafia a {
+    color: red;
+    text-decoration: none;
+}
+
+#bibliocrafia a:hover {
+    color: blue;
+}
+
+.box ul {
+    list-style: none;
+}
+
+#rodape {
+    padding: 20px 0;
+    color: blue;
+    margin-top: 40px;
+}
