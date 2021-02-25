@@ -51,17 +51,30 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Exercicio 6
 
-let numerosImpares = 0;
+// let numerosImpares = 0;
+
+// for (let index = 0; index < numbers.length; index += 1) {
+
+//     if (numbers[index] % 2 == 1) {
+//         numerosImpares += 1
+//     }
+// }
+
+// if (numerosImpares == 0) {
+//     console.log('Nenhum valor impar encontrado')
+// }
+
+// console.log('No array existe: ' + numerosImpares + ' numeros impares')
+
+// Exercicio 7
+
+let menorValor = numbers[0];
 
 for (let index = 0; index < numbers.length; index += 1) {
 
-    if (numbers[index] % 2 == 1) {
-        numerosImpares += 1
+    if (numbers[index] < menorValor) {
+        menorValor = numbers[index]
     }
 }
 
-if (numerosImpares == 0) {
-    console.log('Nenhum valor impar encontrado')
-}
-
-console.log('No array existe: ' + numerosImpares + ' numeros impares')
+console.log('O menos valor é: ' + menorValor)
