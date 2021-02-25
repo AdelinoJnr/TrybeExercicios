@@ -68,13 +68,23 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Exercicio 7
 
-let menorValor = numbers[0];
+// let menorValor = numbers[0];
 
-for (let index = 0; index < numbers.length; index += 1) {
+// for (let index = 0; index < numbers.length; index += 1) {
 
-    if (numbers[index] < menorValor) {
-        menorValor = numbers[index]
-    }
-}
+//     if (numbers[index] < menorValor) {
+//         menorValor = numbers[index]
+//     }
+// }
 
-console.log('O menos valor é: ' + menorValor)
+// console.log('O menos valor é: ' + menorValor)
+
+// Exercicio 8
+
+// let array = [];
+
+// for (let index = 0; index < 25; index += 1) {
+//     array.push(index + 1);
+// }
+
+// console.log(array)
