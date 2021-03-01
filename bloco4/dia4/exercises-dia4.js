@@ -56,3 +56,21 @@
 // let numerosInteiros = [2, 3, 6, 7, 10, 1];
 
 // console.log(maiorNumeroInteiro(numerosInteiros));
+
+// Exercicio 3
+
+function meuMenorValor(numerosInteiros) {
+  let indexMenorValor = 0;
+
+  for (let index in numerosInteiros) {
+    
+    if (numerosInteiros[index] < numerosInteiros[indexMenorValor]) {
+      indexMenorValor = index;
+    }
+    
+  }
+  return indexMenorValor;
+}
+
+let numerosInteiros = [2, 4, 6, 7, 10, 0, -3];
+console.log(meuMenorValor(numerosInteiros));
