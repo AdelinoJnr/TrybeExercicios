@@ -25,7 +25,7 @@
 // let ast = '';
 
 // for (let index1 = 0; index1 < n; index1 += 1) {
-  
+
 //   ast += '*';
 //   console.log(ast)
 // }
@@ -54,3 +54,27 @@
 
 // Exercicio 4
 
+let n = 5;
+let simbol = '*';
+let inputLine = '';
+let delimitadorCenter = Math.trunc(n / 2) + 1;
+let delimitadorRight = delimitadorCenter - 1;
+let delimitadorLeft = delimitadorCenter + 1;
+
+for (let indexRow = 1; indexRow <= delimitadorCenter; indexRow += 1) {
+
+  for (let indexColumn = 1; indexColumn <= n; indexColumn += 1) {
+
+    if (indexColumn > delimitadorRight && indexColumn < delimitadorLeft) {
+      inputLine += simbol;
+    } else {
+      inputLine += ' ';
+    }
+  }
+
+  console.log(inputLine);
+  inputLine = '';
+  delimitadorLeft += 1;
+  delimitadorRight -= 1;
+
+}
