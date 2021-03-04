@@ -79,11 +79,7 @@
     function mudarParagrafoMaiusculo() {
       let paragrafos = document.querySelectorAll('p')
       for (let index = 0; index < paragrafos.length; index += 1) {
-        if (index === 0) {
-          document.querySelectorAll('p')[0].innerHTML = 'TEXTO PADRÃO DO NOSSO SITE'
-        } else if (index === 2) {
-          document.querySelectorAll('p')[2].innerHTML = 'TRYBE'
-        }
+        paragrafos[index].innerText = paragrafos[index].innerText.toUpperCase()  
       }
     }
 
@@ -92,7 +88,7 @@
     function monstrarTagP() {
       let paragrafos = document.querySelectorAll('p')
       for (let index = 0; index < paragrafos.length; index += 1) {
-        console.log(document.querySelectorAll('p')[index])
+        console.log(document.querySelectorAll('p')[index].innerText)
       }
     }
 
