@@ -88,10 +88,30 @@
       myDiv4.className = 'right-content';
       document.querySelector('.main-content').appendChild(myDiv4);
 
+      // Exercicio 7
       let imageLink = document.createElement('img');
       imageLink.className = 'small-image';
       imageLink.src = 'https://picsum.photos/200';
       document.querySelector('.left-content').appendChild(imageLink);
+
+      // Exercicio 8
+      let listNaoOrdenada = document.createElement('ul');
+      listNaoOrdenada.className = 'list-nao-ordenada';
+      document.querySelector('.right-content').appendChild(listNaoOrdenada);
+      for (let index = 1; index < 10; index += 1) {
+        let list = document.createElement('li');
+        document.querySelector('.list-nao-ordenada').appendChild(list)
+        list.innerHTML = index;
+      }
+
+      // Exercicio 9
+      for (let index = 0; index < 3; index += 1) {
+        let tags1H3 = document.createElement('h3');
+        tags1H3.className = 'description'
+        document.querySelector('.center-content').appendChild(tags1H3);
+      }
+      
+
 
     </script>
   </body>
