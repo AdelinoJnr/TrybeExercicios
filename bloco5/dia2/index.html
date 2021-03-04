@@ -79,7 +79,19 @@
       document.querySelector('.center-content').appendChild(paragrafo);
 
       // Exercicio 5
-      
+      let myDiv3 = document.createElement('div');
+      myDiv3.className = 'left-content';
+      document.querySelector('.main-content').appendChild(myDiv3);
+
+      // Exercicio 6
+      let myDiv4 = document.createElement('div');
+      myDiv4.className = 'right-content';
+      document.querySelector('.main-content').appendChild(myDiv4);
+
+      let imageLink = document.createElement('img');
+      imageLink.className = 'small-image';
+      imageLink.src = 'https://picsum.photos/200';
+      document.querySelector('.left-content').appendChild(imageLink);
 
     </script>
   </body>
