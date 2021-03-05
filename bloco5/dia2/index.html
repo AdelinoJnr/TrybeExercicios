@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+
+    <script>
+        
+      // Exercicio 1
+      let myTitle = document.createElement('h1');
+      myTitle.innerHTML = 'Exercício 5.2';
+      document.body.appendChild(myTitle);
+
+      // Exercicio 2
+      let myFirstDiv = document.createElement('div');
+      myFirstDiv.className = 'main-content'
+      document.body.appendChild(myFirstDiv);
+
+      // Exercicio 3
+      let myDiv2 = document.createElement('div');
+      myDiv2.className = 'center-content'
+      document.querySelector('.main-content').appendChild(myDiv2);
+
+      // Exercicio 4
+      let paragrafo = document.createElement('p');
+      document.querySelector('.center-content').appendChild(paragrafo);
+
+      // Exercicio 5
+      let myDiv3 = document.createElement('div');
+      myDiv3.className = 'left-content';
+      document.querySelector('.main-content').appendChild(myDiv3);
+
+      // Exercicio 6
+      let myDiv4 = document.createElement('div');
+      myDiv4.className = 'right-content';
+      document.querySelector('.main-content').appendChild(myDiv4);
+
+      // Exercicio 7
+      let imageLink = document.createElement('img');
+      imageLink.className = 'small-image';
+      imageLink.src = 'https://picsum.photos/200';
+      document.querySelector('.left-content').appendChild(imageLink);
+
+      // Exercicio 8
+      let listNaoOrdenada = document.createElement('ul');
+      listNaoOrdenada.className = 'list-nao-ordenada';
+      document.querySelector('.right-content').appendChild(listNaoOrdenada);
+      for (let index = 1; index < 10; index += 1) {
+        let list = document.createElement('li');
+        document.querySelector('.list-nao-ordenada').appendChild(list)
+        list.innerHTML = index;
+      }
+
+      // Exercicio 9
+      for (let index = 0; index < 3; index += 1) {
+        let tags1H3 = document.createElement('h3');
+        tags1H3.className = 'description'
+        document.querySelector('.center-content').appendChild(tags1H3);
+      }
+      
+
+
+    </script>
+  </body>
+</html>
