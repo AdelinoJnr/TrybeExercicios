@@ -57,9 +57,9 @@
 let n = 5;
 let simbol = '*';
 let inputLine = '';
-let delimitadorCenter = Math.trunc(n / 2) + 1;
-let delimitadorRight = delimitadorCenter - 1;
-let delimitadorLeft = delimitadorCenter + 1;
+let delimitadorCenter = Math.trunc(n / 2) + 1; // 3
+let delimitadorRight = delimitadorCenter - 1; // 2
+let delimitadorLeft = delimitadorCenter + 1; // 4
 
 for (let indexRow = 1; indexRow <= delimitadorCenter; indexRow += 1) {
 
