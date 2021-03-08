@@ -35,3 +35,13 @@ function createDaysCalender() {
   }
 }
 createDaysCalender();
+
+// Exercicio 2
+function createBtnFeriados(btnString) {
+  const btnFeriados = document.createElement('button');
+  const selectDiv = document.querySelector('.buttons-container')
+  btnFeriados.innerHTML = btnString;
+  selectDiv.appendChild(btnFeriados);
+}
+
+createBtnFeriados('Feriados');
