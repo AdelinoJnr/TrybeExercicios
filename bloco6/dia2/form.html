@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulatio</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+
+    <form action="" method="GET">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="nome">Seu nome:
+          <input 
+          type="text" 
+          required id="nome" 
+          name="name"
+          placeholder="Digite seu nome"
+          autocomplete="off" 
+          autofocus
+          >
+        </label>
+        <br>
+        <br>
+        <label for="email-user">Seu e-mail:
+          <input 
+          type="email" 
+          name="email" 
+          id="email-user"
+          placeholder="Digite seu e-mail"
+          required
+          >
+        </label>
+        <br>
+        <br>
+        <label for="your-cpf">Seu CPF:
+          <input 
+          type="text" 
+          name="cpf" 
+          id="your-cpf"
+          placeholder="Digite seu cpf"
+          required
+          autocomplete="off"
+          max="11"
+          >
+        </label>
+        <br>
+        <br>
+        <label for="endereco-user">Seu endereço:
+          <input 
+          type="text" 
+          name="endereco" 
+          id="endereco-user"
+          placeholder="Digite seu endereço"
+          required
+          >
+        </label>
+        <br>
+        <br>
+        <label for="cidade-user">Sua cidade:
+          <input 
+          type="text" 
+          name="cidade" 
+          id="cidade-user"
+          placeholder="Digite sua cidade"
+          required
+          >
+        </label>
+        <br>
+        <br>
+        <label for="estado-user">Seu estado:
+          <select name="estado" id="estado-user" required>
+            <option value="" selected>---- Selecione ----</option>
+            <option value="sp">São Paulo</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="ba">Bahia</option>
+            <option value="rs">Rio Grande do Sul</option>
+            <option value="es">Espirito Santo</option>
+          </select>
+        </label>
+        <br>
+        <br>
+        <fieldset id="complemento">
+          <legend>Complemento</legend>
+          <label for="casa-user">
+            <input 
+            type="radio" 
+            name="complemento" 
+            id="casa-user"
+            value="casa"
+            >Casa
+          </label>
+          <br>
+          <label for="apartamento-user">
+            <input 
+            type="radio" 
+            name="complemento" 
+            id="apartamento-user"
+            value="apartamento"
+            >Apartamento
+          </label>
+        </fieldset>      
+        <br><br>
+      </fieldset>
+      <fieldset>
+        <legend>Ultimo Emprego</legend>
+        <textarea name="resumo-curriculo" id="resumo-curriculo" placeholder="Digite resumo do seu currículo" cols="50" rows="8" required></textarea>
+        <br><br>
+        <label for="cargo">Seu cargo:</label>
+        <input type="text" name="cargo" id="cargo" placeholder="Digite seu Cargo" required>
+        <br><br>
+        <label for="data-inicio">Data de Inicio:</label>
+        <input type="text" name="data-inicio" id="data-inicio" required placeholder="dd/mm/aaaa" required>
+        <br><br>
+        <button type="submit" id="btn-submit">Enviar</button>
+      </fieldset> 
+    </form>
+
+    <div class="curriculo">
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>

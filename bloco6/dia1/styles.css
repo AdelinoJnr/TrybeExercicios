@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e0e0e0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+
+fieldset {
+  color: white;
+  background-color: #1b1b1b;
+  border-radius: 1%;
+  border: 2px solid #ff0606;
+  padding: 20px;
+}
+
+legend {
+  padding-top: 1px;
+  background-color: rgba(65, 151, 8, 0.596);
+}
+
+input {
+  background-color: #fff;
+  border: 1px solid red;
+  height: 20px;
+}
+
+.curriculo {
+  background-color: #f1e74e;
+  padding: 15px;
+  color: black;
+  text-align: center;
+}
