@@ -4,12 +4,12 @@
   <head>
     <meta charset="UTF-8">
     <title>Formulatio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
 
-    <form action="">
+    <form action="" method="GET">
       <fieldset>
         <legend>Dados Pessoais</legend>
         <label for="nome">Seu nome:
@@ -83,7 +83,7 @@
         </label>
         <br>
         <br>
-        <fieldset>
+        <fieldset id="complemento">
           <legend>Complemento</legend>
           <label for="casa-user">
             <input 
@@ -110,13 +110,18 @@
         <textarea name="resumo-curriculo" id="resumo-curriculo" placeholder="Digite resumo do seu currículo" cols="50" rows="8" required></textarea>
         <br><br>
         <label for="cargo">Seu cargo:</label>
-        <input type="text" name="cargo" id="cargo" required>
+        <input type="text" name="cargo" id="cargo" placeholder="Digite seu Cargo" required>
         <br><br>
         <label for="data-inicio">Data de Inicio:</label>
-        <input type="text" name="data-inicio" id="data-inicio" required placeholder="dd/mm/aaaa">
-
-      </fieldset>
+        <input type="text" name="data-inicio" id="data-inicio" required placeholder="dd/mm/aaaa" required>
+        <br><br>
+        <button type="submit" id="btn-submit">Enviar</button>
+      </fieldset> 
     </form>
+
+    <div class="curriculo">
+
+    </div>
 
     <script src="script.js"></script>
   </body>
