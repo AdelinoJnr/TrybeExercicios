@@ -15,4 +15,3 @@ const newEmployees = (nome) => {
 
 const createEmail = newEmployees('adelinojunior').id1();
 console.log(createEmail);
-
