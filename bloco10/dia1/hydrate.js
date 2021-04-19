@@ -8,7 +8,9 @@ const hydrate = (string) => {
       return acc += numberAtual;
   }, 0);
 
-  return retiraNumeros === 1 ? `${retiraNumeros} copo de água` : `${retiraNumeros} copos de água`;
+  return retiraNumeros === 1
+    ? `${retiraNumeros} copo de água`
+    : `${retiraNumeros} copos de água`;
 };
 
 console.log(hydrate('4 caipirinhas e 2 cervejas'))
