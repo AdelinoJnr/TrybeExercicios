@@ -1,0 +1,55 @@
+<!-- jokes.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Best jokes ever</title>
+  </head>
+  <body>
+    <h1>Get ready for a great joke!</h1>
+    <h2 id="jokeContainer"></h2>
+    <div class="box-piada"></div>
+
+    <script>
+       // apiScript.js     
+      const API_URL = 'https://icanhazdadjoke.com/';
+
+      const fetchJoke = () => {
+        const myObject = {
+          method: 'GET',
+          headers: { 'Accept': 'application/json' }
+        };
+        fetch(API_URL, myObject)
+          .then((result) => result.json()
+            .then((dados) => {
+              createPiada(dados.joke)
+            }));
+      };
+
+      const createPiada = (piadaSite) => {
+        const piada = document.createElement('p');
+        const divPai = document.querySelector('.box-piada');
+        piada.innerHTML = piadaSite;
+        divPai.appendChild(piada);
+      };
+
+      const myPromise = () => {
+        return new Promise((resolve, reject) => {
+          const numbers = [];
+          for (let index = 1; index <= 50; index += 1) {
+            numbers.push(index);
+          }
+          const soma = numbers.reduce((acc, curr) => acc + curr);
+          soma < 8000 ? resolve : reject;
+        })
+      };
+
+      const msgResolve = () => console.log('Promise resolvida');
+      const msgRejeitada = () => console.log('Promise rejeitada');
+
+      console.log(myPromise().then((result) => console.log('Promise resolvida')).catch((error) => console.log('Promise rejeitada')))
+
+
+      window.onload = () => fetchJoke();
+    </script>
+  </body>
+</html>
