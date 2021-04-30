@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+.btn {
+  background-color: #1b1b1b;
+  color: orange;
+  height: 30px;
+  width: 80px;
+}
+
+.btn:hover {
+  background-color: black;
+}
