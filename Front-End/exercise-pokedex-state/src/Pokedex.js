@@ -14,7 +14,6 @@ class Pokedex extends React.Component {
   }
 
   eventClick() {
-    console.log(this)
     this.setState((anterior, _props) => ({
       contador: anterior.contador !== this.props.pokemons.length - 1 ? anterior.contador + 1 : anterior.contador - 8
     }))

@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1d1d1d;
+  font-family: 'Cabin', sans-serif;
+  box-sizing: border-box;
+}
+
+fieldset {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 90%;
+}
+
+legend {
+  color: orange;
+  text-align: center;
+  padding: 12px 5px 5px;
+}
+
+label {
+  color: orange;
+}
+
+input {
+  width: 90%;
+}
+
+p {
+  text-align: center;
+  color: orange;
+  margin-top: 15px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-radios {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-around;
+}
